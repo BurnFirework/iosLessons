@@ -1,6 +1,4 @@
 //№1
-
-import Darwin
 func pariry(_ x: Int) -> Bool {
     return x % 2 == 0
 }
