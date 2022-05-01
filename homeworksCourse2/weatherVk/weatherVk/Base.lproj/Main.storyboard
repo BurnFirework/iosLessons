@@ -50,8 +50,13 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCp-Ss-e2D">
                                         <rect key="frame" x="180.66666666666666" y="479.66666666666663" width="67" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQD-jG-Bta"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzX-yE-X5W">
                                         <rect key="frame" x="65" y="328.33333333333331" width="42" height="21"/>
@@ -95,6 +100,11 @@
                             <constraint firstItem="l8U-ZP-v1u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ebg-Iy-S6z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginInput" destination="taJ-Yv-yV5" id="MPK-kc-96e"/>
+                        <outlet property="passwordInput" destination="dnj-6t-num" id="Ixg-ML-h9h"/>
+                        <outlet property="scrollView" destination="l8U-ZP-v1u" id="CKX-BL-jsg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,6 +115,9 @@
         <image name="vkImage.png" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
